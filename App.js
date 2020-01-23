@@ -1,15 +1,20 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
+import Header from './components/Header'
+
 export default function App() {
   return (
-    <View style={styles.container}>
-
+    <View style={styles.screen}>
+      <Header title="hello"></Header>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+  screen: {
+    flex: 1
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
