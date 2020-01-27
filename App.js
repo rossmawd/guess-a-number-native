@@ -6,7 +6,7 @@ import Header from './components/Header'
 export default function App() {
   return (
     <View style={styles.screen}>
-      <Header title="hello"></Header>
+      <Header title="Here is the title bar"></Header>
     </View>
   );
 }
