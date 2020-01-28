@@ -8,8 +8,8 @@ const StartGameScreen = props => {
       <Text style={styles.title}>Start a new game!</Text>
       <View style={styles.inputContainer}>
         <Text>Select a Number</Text>
-        <TextInput />>
-       <View style={styles.buttonContainer}>
+        <TextInput />
+        <View style={styles.buttonContainer}>
           <Button title='reset' onPress={() => { }} />
           <Button title='confirm' onPress={() => { }} />
         </View>
@@ -25,13 +25,17 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   title: {
-
+    fontSize: 20,
+    marginVertical: 10
   },
   inputContainer: {
 
   },
   buttonContainer: {
-
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-between',
+    paddingHorizontal: 15
   }
 })
 
