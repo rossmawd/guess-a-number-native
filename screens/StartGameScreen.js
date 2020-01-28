@@ -29,6 +29,16 @@ const styles = StyleSheet.create({
     marginVertical: 10
   },
   inputContainer: {
+    width: 300,
+    maxWidth: '80%',
+    alignItems: 'center',
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 6,
+    shadowOpacity: 0.26,
+    elevation: 8,
+    backgroundColor: 'white',
+    padding: 20
 
   },
   buttonContainer: {
@@ -42,14 +52,16 @@ const styles = StyleSheet.create({
 export default StartGameScreen
 
 
- //add all styles to styles
- // for title:
-  // fontSize is 20
-  //marginVertical 10
+// shadowColor: black
+// shadowOffset
+  // takes an object 
+    // see the Native docs
+    // inside this give width 0 and height 2
+//shadowRadius 6  (set to 0 if you only eant the shadow to appear according to the offset)
+//shadowOpacity 0.26
+//elevation 8    --ONLY works on Android
+//background Color: white
 
-  //buttonContainer  should have:
-    // flexDirection: row
-    //width 100%
-    //justifyContent space-betweeen
-    //paddingHorizontal 15
-
+//to stop items from sitting on the edges of the card use padding
+  //padding 20
+  //borderRadius
